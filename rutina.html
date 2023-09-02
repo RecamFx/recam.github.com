@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Agrega este enlace al head de tu HTML -->
+<a href="informacion-ejercicio.html" id="info-link" style="display: none;">Información del ejercicio</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutina de Gimnasio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo/logoDef.png">
+</head>
+<body>
+    <header>
+        <h1>RUTINA GIMNASIO</h1>
+    </header>
+    <main>
+        <section id="rutina">
+            <h2></h2>
+            <ul id="lista-rutina">
+                <!-- Día 1: Pecho y Tríceps -->
+                <li class="dia">
+                    <h3>Día 1: Pecho y Tríceps</h3>
+                    <div class="marcar-dia">
+                        <input type="checkbox" id="dia1" class="marcar-dia-checkbox">
+                        <label for="dia1"></label>
+                    </div>
+                    <ul class="ejercicios">
+                        <!-- Ejercicios del Día 1 -->
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio1-1" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio1-1"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 1', 'Press de banca: 4 series de 8-10 repeticiones.', 'ejercicios/1-1.jpg')">Info</button>
+                            <span>Press de banca: 4 series de 8-10 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio1-2" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio1-2"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 2', 'Press inclinado con mancuernas: 3 series de 10-12 repeticiones.', 'ejercicios/imagen-ejercicio2.jpg')">Info</button>
+                            <span>Press inclinado con mancuernas: 3 series de 10-12 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio1-3" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio1-3"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 3', 'Aperturas con mancuernas: 3 series de 12-15 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Aperturas con mancuernas: 3 series de 12-15 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio1-4" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio1-4"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 4', 'Fondos en máquina o paralelas: 3 series de 8-10 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Fondos en máquina o paralelas: 3 series de 8-10 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio1-5" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio1-5"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 5', 'Extensiones de tríceps en polea alta: 4 series de 10-12 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Extensiones de tríceps en polea alta: 4 series de 10-12 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio1-6" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio1-6"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 6', 'Press de tríceps en polea: 3 series de 12-15 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Press de tríceps en polea: 3 series de 12-15 repeticiones</span>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Día 2: Espalda y Bíceps -->
+                <li class="dia">
+                    <h3>Día 2: Espalda y Bíceps</h3>
+                    <div class="marcar-dia">
+                        <input type="checkbox" id="dia2" class="marcar-dia-checkbox">
+                        <label for="dia2"></label>
+                    </div>
+                    <ul class="ejercicios">
+                        <!-- Ejercicios del Día 2 -->
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio2-1" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio2-1"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 1', 'Dominadas o Pull-ups: 4 series de 8-10 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Dominadas o Pull-ups: 4 series de 8-10 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio2-2" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio2-2"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 2', 'Pulldowns en polea alta: 3 series de 10-12 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Pulldowns en polea alta: 3 series de 10-12 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio2-3" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio2-3"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 3', 'Remo con barra T: 3 series de 8-10 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Remo con barra T: 3 series de 8-10 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio2-4" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio2-4"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 4', 'Curl de bíceps con barra: 4 series de 10-12 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Curl de bíceps con barra: 4 series de 10-12 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio2-5" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio2-5"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 5', 'Curl de martillo (con mancuernas): 3 series de 12-15 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Curl de martillo (con mancuernas): 3 series de 12-15 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio2-6" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio2-6"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 6', 'Curl de bíceps en polea baja: 3 series de 12-15 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Curl de bíceps en polea baja: 3 series de 12-15 repeticiones</span>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Día 3: Piernas y Hombros -->
+                <li class="dia">
+                    <h3>Día 3: Piernas y Hombros</h3>
+                    <div class="marcar-dia">
+                        <input type="checkbox" id="dia3" class="marcar-dia-checkbox">
+                        <label for="dia3"></label>
+                    </div>
+                    <ul class="ejercicios">
+                        <!-- Ejercicios del Día 3 -->
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio3-1" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio3-1"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 1', 'Sentadillas: 4 series de 8-10 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Sentadillas: 4 series de 8-10 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio3-2" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio3-2"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 2', 'Prensa de piernas: 3 series de 10-12 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Prensa de piernas: 3 series de 10-12 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio3-3" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio3-3"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 3', 'Extensiones de cuádriceps: 3 series de 12-15 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Extensiones de cuádriceps: 3 series de 12-15 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio3-4" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio3-4"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 4', 'Press militar con barra: 4 series de 8-10 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Press militar con barra: 4 series de 8-10 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio3-5" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio3-5"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 5', 'Elevaciones laterales (con mancuernas): 3 series de 10-12 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Elevaciones laterales (con mancuernas): 3 series de 10-12 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio3-6" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio3-6"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 6', 'Elevaciones frontales (con mancuernas): 3 series de 10-12 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Elevaciones frontales (con mancuernas): 3 series de 10-12 repeticiones</span>
+                        </li>
+                        <li>
+                            <div class="marcar-ejercicio">
+                                <input type="checkbox" id="ejercicio3-7" class="marcar-ejercicio-checkbox">
+                                <label for="ejercicio3-7"></label>
+                            </div>
+                            <button class="info-btn" onclick="mostrarInformacion('Ejercicio 7', 'Encogimientos de hombros: 4 series de 12-15 repeticiones.', 'ejercicios/imagen-ejercicio1.jpg')">Info</button>
+
+                            <span>Encogimientos de hombros: 4 series de 12-15 repeticiones</span>
+                        </li>
+                    </ul>
+                    
+                </li>
+
+                <li class="diass">
+                    <button class="boton-personalizado" onclick="window.location.href = 'index.html';">Volver</button>
+                </li>
+
+                <!-- Puedes agregar más días y ejercicios aquí -->
+            </ul>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+
+<!-- Cuadro emergente para mostrar información del ejercicio -->
+<div class="ventana-emergente" id="ventanaEmergente">
+    <div class="contenido-emergente">
+        <span class="cerrar" onclick="cerrarVentanaEmergente()">&times;</span>
+        <h2 id="tituloEjercicio"></h2>
+        <p id="descripcionEjercicio"></p>
+        <img id="imagenEjercicio" src="" alt="Imagen del ejercicio" class="imagen-ejercicio">
+    </div>
+</div>
+
+</body>
+
+<footer>
+    <div class="footer-content">
+        <p>Hecho por Camilo</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/camilo.reartes" target="_blank"><img src="imgaes/instagram-logo.png" alt="Instagram" class="social-icon"></a>
+            <a href="https://twitter.com/Camilouoououu" target="_blank"><img src="imgaes/twitter-logo.png" alt="Twitter" class="social-icon"></a>
+        </div>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=camiloreartesall@gmail.com" class="contact-button">Contactar</a>
+    </div>
+</footer>
+</html>

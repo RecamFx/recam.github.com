@@ -1,0 +1,269 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Estilos para la lista de rutina */
+#lista-rutina {
+    list-style: none;
+    padding: 0;
+}
+
+.dia {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dia h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ejercicios {
+    list-style: none;
+    padding: 0;
+}
+
+.ejercicios li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los checkboxes personalizados */
+.marcar-dia-checkbox, .marcar-ejercicio-checkbox {
+    display: none;
+}
+
+.marcar-dia-label, .marcar-ejercicio-label {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.marcar-dia-label::after, .marcar-ejercicio-label::after {
+    content: " ";
+    display: none;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.marcar-dia-checkbox:checked + .marcar-dia-label::after, .marcar-ejercicio-checkbox:checked + .marcar-ejercicio-label::after {
+    display: block;
+}
+
+/* Estilos para botones */
+.info-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 3px 7px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.info-btn:hover {
+    background-color: #555;
+}
+
+/* Estilos para el botón de información */
+.info-btn {
+    background-color: #1d1d1d;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem; /* Igualar el tamaño de la letra */
+    cursor: pointer;
+}
+
+/* Estilos para el botón de información al pasar el mouse */
+.info-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los íconos sociales */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 2em; /* Tamaño igual al texto */
+    height: 2em; /* Tamaño igual al texto */
+    margin: 0 5px; /* Espaciado entre los íconos */
+}
+
+/* Estilos para el botón de contacto */
+.contact-button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+/* Estilos para el botón de información */
+.info-btn {
+    border: none;
+    color: #ffffff;
+    font-size: 1rem; /* Tamaño igual al texto */
+    cursor: pointer;
+    text-decoration: none; /* Quita el subrayado */
+}
+
+/* Estilos para el botón de información al pasar el mouse */
+.info-btn:hover {
+    text-decoration: none; /* Quita el subrayado al pasar el mouse */
+}
+
+
+
+
+
+
+
+/* Estilos para la ventana emergente */
+.ventana-emergente {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.contenido-emergente {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Alinea el contenido y la imagen a los extremos */
+    align-items: center; /* Alinea verticalmente */
+    flex-direction: column; /* Apila elementos en columna */
+}
+
+.ejercicio-info {
+    width: 60%; /* Ajusta el ancho del contenido del ejercicio */
+}
+
+/* Estilos para la imagen del ejercicio en la ventana emergente */
+.imagen-ejercicio {
+    max-width: 100%; /* Ancho máximo del 100% */
+    max-height: 80vh; /* Altura máxima del 80% del alto de la pantalla */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 15px; /* Tamaño más grande */
+    cursor: pointer;
+    color: #292929; /* Color del texto */
+    background-color: #ffffff; /* Fondo rojo */
+    padding: 10px; /* Espacio alrededor de la "X" */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición de color de fondo suave */
+}
+
+.cerrar:hover {
+    background-color: #3f3f3f; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.boton-personalizado {
+    align-items: center;
+    font-size: 24px; /* Tamaño de fuente más grande */
+    text-align: center;
+    align-content: center;
+    background-color: #1b1b1b;
+    color: #fff;
+    border: none;
+    padding: 3px 7px;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+    width: 200px;
+}
+
+.boton-personalizado:hover {
+    background-color: #3f3f3f; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.diass {
+    text-align: center;
+    align-items: center;
+}
